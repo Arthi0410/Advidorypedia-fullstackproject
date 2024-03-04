@@ -1,3 +1,6 @@
+
+Full Stack Assignment
+
 This repository contains a full-stack application developed using Node.js, Express.js, React.js, and a database of choice. The application implements user signup functionality, post listing with infinite scrolling, JWT authentication, and follows best practices for security and usability.
 
 Technology Stack: 
