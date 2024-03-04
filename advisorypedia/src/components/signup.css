@@ -1,0 +1,100 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: fixed;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+    box-shadow: 0 14px 15px rgba(0, 0, 0, 0.1);
+    width: 450px;
+}
+
+input[type=text] {
+    width: auto;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+
+input[type=email] {
+    width: auto;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+
+input[type=password] {
+    width: auto;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+input[type=checkbox] {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.form-grp {
+    margin: 10px 10px;
+    margin-right: 10px;
+    font-size: larger;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 5px;
+}
+
+.hd {
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    text-align: center;
+    color: #333;
+}
+
+.cb {
+    background-color: black !important;
+    color: #fff;
+    width: 90px;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+.terms {
+    font-family: 'Nunito', sans-serif;
+    font-size: small;
+    font-weight: 100;
+    color: #333;
+}
+
+p {
+    size: 20px;
+    color: rgb(253, 47, 47);
+}

@@ -1,0 +1,3 @@
+const UserModal = require('./usermodal')
+
+module.exports = { UserModal }

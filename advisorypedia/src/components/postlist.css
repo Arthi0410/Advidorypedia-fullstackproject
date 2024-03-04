@@ -1,0 +1,31 @@
+.head1 {
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    color: #464646;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 8px #9c9c9c;
+    padding: 20px;
+    margin: 20px;
+}
+
+.post-t {
+    font-size: x-large;
+    font-family: 'Nunito', sans-serif;
+    color: gray;
+}
+
+.post-b {
+    color: #333;
+}
