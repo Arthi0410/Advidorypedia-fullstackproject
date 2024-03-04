@@ -93,46 +93,6 @@ const generateToken = (user) => {
     return jwt.sign({ id: user._id }, JWT_SECRET_KEY, { expiresIn: '1h' }); // Adjust expiration time as needed
 };
 
-// Login endpoint
-router.post('/login', async (req, res) => {
-    const { username, password } = req.body;
-
-    try {
-        const user = await UserModal.findOne({ username });
-        if (!user) {
-            return res.status(404).json({ message: 'User not found' });
-        }
-
-        const isPasswordValid = await bcrypt.compare(password, user.password);
-        if (!isPasswordValid) {
-            return res.status(401).json({ message: 'Invalid password' });
-        }
-
-        // Generate JWT token
-        const token = generateToken(user);
-
-        return res.status(200).json({ message: 'Login successful', token });
-    } catch (error) {
-        console.error(error);
-        return res.status(500).json({ message: 'Internal Server Error' });
-    }
-});
-
-
-
-// Protected route 
-router.get('/profile', authenticateJWT, (req, res) => {
-    const { id } = req.user; // Assuming the user ID is stored in the JWT payload
-    User.findById(id, (err, user) => {
-        if (err) {
-            return res.status(500).json({ message: 'Error fetching user details' });
-        }
-        if (!user) {
-            return res.status(404).json({ message: 'User not found' });
-        }
-        return res.status(200).json({ message: 'Profile accessed successfully', user });
-    });
-});
 
 
 module.exports = router;
