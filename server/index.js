@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
 app.use(cors());
-mongoose.connect('mongodb+srv://arthichebrolu:EQuxVLEuxtFiXVys@cluster0.4bnqvvl.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('MONGODB_URL', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
